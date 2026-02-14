@@ -47,7 +47,7 @@ except Exception as e:
     print(f"读取JSON文件时出错: {e}")
     raise
 
-                          
+# 只是示例人物资料请按照论文中提到的进行完整的评论生成                           
 roles_list = [
     {"role_number": 1, "gender": "Male", "age": "Youth (18-35 years old)", "education": "Bachelor’s degree"},
     {"role_number": 2, "gender": "Male", "age": "Middle-aged (36-65 years old)", "education": "Postgraduate education"},
@@ -257,3 +257,4 @@ csvfile.close()
 error_csvfile.close()
 
 print("操作完成。")
+
