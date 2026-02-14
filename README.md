@@ -2,7 +2,7 @@
 [Information Fusion] Official Implementation of DAE (Bridging Cognition and Emotion: Empathy-Driven Multimodal Misinformation Detection)
 
 ## 📝 Citation
-If you find GDPO useful, please star and cite it:
+If you find DAE useful, please star and cite it:
 ```bibtex
 @article{yuan2026bridging,
 title = {Bridging cognition and emotion: Empathy-driven multimodal misinformation detection},
