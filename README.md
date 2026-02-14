@@ -1,6 +1,17 @@
+# Bridging Cognition and Emotion: Empathy-Driven Multimodal Misinformation Detection
+
+<p align="center">
+📄 <a href="https://doi.org/10.1016/j.inffus.2026.104210">Paper</a> 
+&nbsp; | &nbsp;
+💻 <a href="https://github.com/Ethylyikes/DAE">Code</a>
+
 # About DAE
+
 We propose the Dual-Aspect Empathy Framework (DAE), which derives creator and reader perspectives by fusing separately modeled cognitive and emotional empathy. Creators’ cognitive strategies and affective appeals are analyzed, while Large Language Models (LLMs) simulate readers’ judgments and emotional reactions, providing richer and more human-like signals than conventional classifiers, and partially alleviating the analytical challenge posed by insufficient human feedback. An empathy-aware filtering mechanism is further designed to refine outputs, enhancing authenticity and diversity. The pipeline integrates multimodal feature extraction, empathy-oriented representation learning, LLM-based reader simulation, and empathy-aware filtering. Experiments on benchmark datasets such as PolitiFact, GossipCop and Pheme show that the fusion-based DAE consistently outperforms state-of-the-art baselines, offering a novel and human-centric paradigm for misinformation detection.
 
+<h1 align="center"> 
+    <img src="./assert/framework.png" alt="Framework" style="width: 65%;">
+</h1>
 
 # Run DAE
 
