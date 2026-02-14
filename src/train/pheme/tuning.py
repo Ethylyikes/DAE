@@ -185,11 +185,6 @@ class CustomDataset(Dataset):
 
 
 def collate_fn(batch):
-    """
-    对文本部分直接 tokenize；
-    对评论部分，每条评论单独 tokenize，不拼接内容，
-    若样本内评论数量不足，则按本 batch 内最大评论数进行零填充。
-    """
     data_ids = [item[0] for item in batch]
     texts = [item[1] for item in batch]
     merged_comments = [item[2] for item in batch]             
@@ -749,3 +744,4 @@ save_test_results(model, test_loader, correct_csv_path, incorrect_csv_path)
 
            
 fitlog.finish()
+
