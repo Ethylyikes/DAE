@@ -5,7 +5,7 @@
 &nbsp; | &nbsp;
 💻 <a href="https://github.com/Ethylyikes/DAE">Code</a>
 
-# About DAE
+# 🔍 About DAE
 
 We propose the Dual-Aspect Empathy Framework (DAE), which derives creator and reader perspectives by fusing separately modeled cognitive and emotional empathy. Creators’ cognitive strategies and affective appeals are analyzed, while Large Language Models (LLMs) simulate readers’ judgments and emotional reactions, providing richer and more human-like signals than conventional classifiers, and partially alleviating the analytical challenge posed by insufficient human feedback. An empathy-aware filtering mechanism is further designed to refine outputs, enhancing authenticity and diversity. The pipeline integrates multimodal feature extraction, empathy-oriented representation learning, LLM-based reader simulation, and empathy-aware filtering. Experiments on benchmark datasets such as PolitiFact, GossipCop and Pheme show that the fusion-based DAE consistently outperforms state-of-the-art baselines, offering a novel and human-centric paradigm for misinformation detection.
 
@@ -13,11 +13,11 @@ We propose the Dual-Aspect Empathy Framework (DAE), which derives creator and re
     <img src="./assert/framework.png" alt="Framework" style="width: 65%;">
 </h1>
 
-# Run DAE
+# 🚀 Run DAE
 
 This repo contains two stages before training: (1) generate comments with OpenAI, (2) clean / filter the generated comments, and finally (3) train three datasets (GossipCop, PHEME, PolitiFact) with the provided `run.sh` scripts.
 
-## 1) Configure API endpoint and data paths
+## ⚙️ 1) Configure API endpoint and data paths
 Update the hard-coded paths before running scripts:
 - OpenAI endpoint/keys in `gen/gencomments.py:10-11` and `gen/filtering.py:10-11`.
 - Generation inputs/outputs in `gen/gencomments.py:14-17`:
@@ -29,19 +29,19 @@ Update the hard-coded paths before running scripts:
   - `json_file`, `image_folder`, `output_csv`, `error_csv` (same meaning as above)
   - `misclassified_csv` – CSV listing `news_id` rows to be re-generated/filtered
 
-## 2) Generate comments
+## 💬 2) Generate comments
 ```bash
 cd repo/src
 python gen/gencomments.py
 ```
 
-## 3) Clean / filter generated comments
+## 🧹 3) Clean / filter generated comments
 ```bash
 cd repo/src
 python gen/filtering.py
 ```
 
-## 4) Train models
+## 🏋️ 4) Train models
 Each dataset has its own launcher; run with Bash or PowerShell:
 - GossipCop: `cd repo/src/train/gossipcop && ./run.sh`
 - PHEME: `cd repo/src/train/pheme && ./run.sh`
@@ -66,7 +66,7 @@ python tuning.py \
 ```
 Apply the same pattern inside `train/pheme/run.sh` and `train/political/run.sh`.
 
-## Tips
+## 💡 Tips
 - For hyperparameters, comment generation, and cleaning prompts, please refer to the standards shown in the article.
 - Due to copyright restrictions on the dataset used, please contact the respective author of the dataset to inquire about your data requirements.
 
