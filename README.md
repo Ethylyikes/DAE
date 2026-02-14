@@ -1,3 +1,7 @@
+# About DAE
+We propose the Dual-Aspect Empathy Framework (DAE), which derives creator and reader perspectives by fusing separately modeled cognitive and emotional empathy. Creators’ cognitive strategies and affective appeals are analyzed, while Large Language Models (LLMs) simulate readers’ judgments and emotional reactions, providing richer and more human-like signals than conventional classifiers, and partially alleviating the analytical challenge posed by insufficient human feedback. An empathy-aware filtering mechanism is further designed to refine outputs, enhancing authenticity and diversity. The pipeline integrates multimodal feature extraction, empathy-oriented representation learning, LLM-based reader simulation, and empathy-aware filtering. Experiments on benchmark datasets such as PolitiFact, GossipCop and Pheme show that the fusion-based DAE consistently outperforms state-of-the-art baselines, offering a novel and human-centric paradigm for misinformation detection.
+
+
 # Run DAE
 
 This repo contains two stages before training: (1) generate comments with OpenAI, (2) clean / filter the generated comments, and finally (3) train three datasets (GossipCop, PHEME, PolitiFact) with the provided `run.sh` scripts.
