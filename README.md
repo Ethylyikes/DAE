@@ -52,7 +52,8 @@ python tuning.py \
 Apply the same pattern inside `train/pheme/run.sh` and `train/political/run.sh`.
 
 ## Tips
-- Keep `output_csv` from generation and cleaning aligned with the `--gpt_csv_file` you pass to training.
+- For hyperparameters, comment generation, and cleaning prompts, please refer to the standards shown in the article.
+- Due to copyright restrictions on the dataset used, please contact the respective author of the dataset to inquire about your data requirements.
 
 ## 📝 Citation
 If you find DAE useful, please star and cite it:
