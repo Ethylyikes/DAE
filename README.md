@@ -1,6 +1,3 @@
-# DAE
-[Information Fusion] Official Implementation of DAE (Bridging Cognition and Emotion: Empathy-Driven Multimodal Misinformation Detection)
-
 # Run DAE
 
 This repo contains two stages before training: (1) generate comments with OpenAI, (2) clean / filter the generated comments, and finally (3) train three datasets (GossipCop, PHEME, PolitiFact) with the provided `run.sh` scripts.
